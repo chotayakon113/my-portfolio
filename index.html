@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | โชตยากร วงษ์สุริยะอุทัย</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Sarabun',sans-serif;
+      background:#f1f5f9;
+      color:#1e293b;
+      line-height:1.8;
+    }
+
+    nav{
+      position:sticky;
+      top:0;
+      background:#0f172a;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px 8%;
+      z-index:999;
+    }
+
+    .logo{
+      color:#818cf8;
+      font-size:24px;
+      font-weight:800;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:20px;
+    }
+
+    nav a{
+      color:#cbd5e1;
+      text-decoration:none;
+      transition:.3s;
+    }
+
+    nav a:hover{
+      color:white;
+    }
+
+    .hero{
+      background:linear-gradient(135deg,#0f172a,#312e81,#6366f1);
+      color:white;
+      text-align:center;
+      padding:90px 20px;
+    }
+
+    .hero img{
+      width:150px;
+      height:150px;
+      border-radius:50%;
+      border:5px solid white;
+      margin-bottom:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,.3);
+    }
+
+    .hero h1{
+      font-size:40px;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:18px;
+      color:#dbeafe;
+      margin-bottom:25px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 28px;
+      background:#ffffff;
+      color:#4338ca;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:#e0e7ff;
+    }
+
+    .container{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
+    }
+
+    h2{
+      text-align:center;
+      font-size:32px;
+      color:#312e81;
+      margin-bottom:35px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,.08);
+      margin-bottom:25px;
+    }
+
+    .highlight{
+      background:#4f46e5;
+      color:white;
+      padding:6px 14px;
+      border-radius:30px;
+      display:inline-block;
+      margin:6px;
+      font-size:14px;
+    }
+
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+
+    .projects{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .project-card{
+      flex:1;
+      min-width:250px;
+      background:white;
+      border-radius:15px;
+      padding:20px;
+      box-shadow:0 5px 15px rgba(0,0,0,.08);
+      transition:.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-6px);
+      box-shadow:0 10px 25px rgba(79,70,229,.2);
+    }
+
+    .project-card h3{
+      color:#4338ca;
+      margin-bottom:10px;
+    }
+
+    .contact p{
+      margin:12px 0;
+      font-size:18px;
+    }
+
+    .contact a{
+      color:#4338ca;
+      text-decoration:none;
+    }
+
+    footer{
+      background:#0f172a;
+      color:#94a3b8;
+      text-align:center;
+      padding:25px;
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+      }
+
+      .hero h1{
+        font-size:30px;
+      }
+
+      .projects{
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">💻 Portfolio</div>
+    <ul>
+      <li><a href="#about">เกี่ยวกับ</a></li>
+      <li><a href="#skills">ทักษะ</a></li>
+      <li><a href="#plan">แผนการเรียน</a></li>
+      <li><a href="#projects">ผลงาน</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <img src="https://api.dicebear.com/9.x/avataaars/svg?seed=Chotayakon" alt="Profile">
+
+    <h1>โชตยากร วงษ์สุริยะอุทัย 👋</h1>
+    <p>นักศึกษา Computer Science | Web Developer มือใหม่</p>
+
+    <a href="#projects" class="btn">ดูผลงานของฉัน</a>
+  </section>
+
+  <section class="container" id="about">
+    <h2>🙋 เกี่ยวกับฉัน</h2>
+
+    <div class="card">
+      <p><strong>ชื่อ :</strong> โชตยากร วงษ์สุริยะอุทัย</p>
+      <p><strong>อายุ :</strong> 20 ปี</p>
+      <p><strong>สถานะ :</strong> นักศึกษา</p>
+      <p><strong>สาขา :</strong> <em>Computer Science</em></p>
+
+      <hr style="margin:20px 0;">
+
+      <p>
+        สวัสดีครับ ผมกำลังศึกษาด้านวิทยาการคอมพิวเตอร์ และมีความสนใจในการพัฒนาเว็บไซต์
+        การออกแบบ UI และการเขียนโปรแกรม HTML, CSS และ JavaScript
+      </p>
+    </div>
+  </section>
+
+  <section class="container" id="skills">
+    <h2>🎯 ทักษะของฉัน</h2>
+
+    <div class="card">
+      <div class="skills">
+        <span class="highlight">HTML5</span>
+        <span class="highlight">CSS3</span>
+        <span class="highlight">Flexbox</span>
+        <span class="highlight">Responsive Design</span>
+        <span class="highlight">JavaScript (กำลังเรียน)</span>
+        <span class="highlight">GitHub</span>
+        <span class="highlight">XAMPP</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="plan">
+    <h2>📚 แผนการเรียน</h2>
+
+    <div class="card">
+      <ol>
+        <li>เรียน HTML พื้นฐาน</li>
+        <li>เรียน CSS และการจัด Layout</li>
+        <li>เรียน Flexbox และ Responsive Web</li>
+        <li>เรียน JavaScript พื้นฐาน</li>
+        <li>สร้างเว็บไซต์ Portfolio</li>
+        <li>อัปโหลดเว็บไซต์ขึ้น GitHub Pages</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="container" id="projects">
+    <h2>💼 ผลงานของฉัน</h2>
+
+    <div class="projects">
+
+      <div class="project-card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>
+          เว็บไซต์ Portfolio ส่วนตัว สร้างด้วย HTML5 และ CSS3
+          รวมความรู้จากบทเรียนทั้งหมด
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>🎨 HTML & CSS Practice</h3>
+        <p>
+          ฝึกการสร้างหน้าเว็บ การจัด Card การใช้ Flexbox
+          และการตกแต่งด้วย CSS
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>🚀 Future Project</h3>
+        <p>
+          ในอนาคตจะเพิ่ม JavaScript และโปรเจกต์ Web Application
+          ลงใน Portfolio นี้
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="container contact" id="contact">
+    <h2>📩 ติดต่อฉัน</h2>
+
+    <div class="card">
+      <p>📧 Email : <a href="mailto:your@email.com">your@email.com</a></p>
+      <p>💻 GitHub : <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>💬 Line ID : yourlineid</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 โชตยากร วงษ์สุริยะอุทัย | Portfolio Website</p>
+    <p>สร้างด้วย HTML5 และ CSS3</p>
+  </footer>
+
+</body>
+</html>
